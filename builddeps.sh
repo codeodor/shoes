@@ -8,7 +8,7 @@ rm -rf /tmp/dep
 cd $1
 
 #curl dependencies if asked
-if [ "$1" = "--download" ]; then
+if [ "$2" = "--download" ]; then
   curl -O http://pkg-config.freedesktop.org/releases/pkg-config-0.20.tar.gz
   curl -O http://downloads.sourceforge.net/project/libpng/libpng14/older-releases/1.4.1/libpng-1.4.1.tar.gz?r=&ts=1312207981&use_mirror=voxel
   curl -O http://downloads.sourceforge.net/project/giflib/giflib%204.x/giflib-4.1.6/giflib-4.1.6.tar.gz?r=&ts=1312208000&use_mirror=softlayer
